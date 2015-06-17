@@ -24,5 +24,5 @@ Skip the bonus section until you're finished with the main releases.
 Any order is fine.
 
 - [Translator Bonus Release (Additional feature)] (translator/bonus.md)
-- [Guessing Bonus Release (RSpec)] (guessing_game/bonus.md)
+- [Guessing Game Bonus Release (RSpec)] (guessing_game/bonus.md)
 - [Refactoring Bonus Release (Short answer)] (refactoring/bonus.md)
