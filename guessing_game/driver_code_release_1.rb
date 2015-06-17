@@ -13,8 +13,8 @@ puts "There will be 5 guesses remaining"
 p game.remaining_guesses == 5
 
 puts "User has neither won nor lost yet"
-p game.has_won == false
-p game.has_lost == false
+p game.has_won? == false
+p game.has_lost? == false
 
 puts "Wrong guess receives correct feedback"
 p game.guess(2) == "Too low!"
@@ -40,5 +40,5 @@ p game.guess(9) == "Too high! WARNING: Only one guess left!"
 p game.guess(8) == "Correct! You win!"
 
 puts "Outcome is recorded correctly"
-p game.has_won == true
-p game.has_lost == false
+p game.has_won? == true
+p game.has_lost? == false
