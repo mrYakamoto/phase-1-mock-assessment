@@ -8,6 +8,12 @@ Make all of the driver code in driver_code_release_0.rb evaluate to true. Runnin
 
 Tip: This is driver code, not RSpec -- you must solve the tests in order because each line of driver code depends on the lines above it running correctly.
 
+*Don't forget to commit after each release!*
+
 ## Release 1
 
 Make all of the driver code in driver_code_release_1.rb evaluate to true.
+
+*Don't forget to commit after each release!*
+
+
