@@ -1,5 +1,7 @@
 # Teenage Slang Translator
 
+Ignore bonus.md for now -- that's a bonus release for when/if you've finished the core challenges.
+
 ## Release 0
 
 Studies show that 105% of teenagers evade adults by communicating in slang. Help parents out by making a dictionary for teen slang.
