@@ -8,7 +8,7 @@ Resources available:
 - your notes/code (please avoid copying and pasting your code)
 - teachers/TAs
 - Google, documentation, etc.
-- breaks (take a lap around the building, you'll feel better!)
+- breaks (take a lap around the floor or a few minutes to breathe, you'll feel better!)
 
 **Attempt the following challenges in order. You are welcome to move on if you get stuck, but give each section a try.**
 
