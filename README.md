@@ -2,7 +2,7 @@
 
 Please work by yourself. Unless instructed to do so, please do not change the tests.
 
-**Do not push your code until the assessment has ended.**
+**Commit after each release (or more often if you like). Do not push your code until the assessment has ended.**
 
 Resources available:
 - your notes/code (please avoid copying and pasting your code)
