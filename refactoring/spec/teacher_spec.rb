@@ -27,7 +27,7 @@ describe Teacher do
     end
   end
 
-  context "#set_phase" do
+  context "#phase" do
     it "starts off in phase 3" do
       expect(jan.phase).to be(3)
     end
@@ -57,12 +57,12 @@ describe Teacher do
 
     it "allows the setting of salary" do
       # ONE MEEEEEELLION DOLLARS!!!
-      jan.set_salary(1000000)
+      jan.salary = 1000000
       expect(jan.salary).to be (1000000)
     end
 
     it "increases salary with a good performance review" do
-      jan.set_salary(1000000)
+      jan.salary = 1000000
       jan.set_performance_rating(100)
       expect(jan.salary).to be(1001000)
     end
@@ -70,7 +70,7 @@ describe Teacher do
 
   describe "feedback acceptance" do
     before(:each) do
-      jan.set_salary(1000000)
+      jan.salary = 1000000
     end
 
     it "is gracious" do

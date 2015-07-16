@@ -57,12 +57,12 @@ describe ApprenticeTeacher do
 
     it "allows the setting of salary" do
       # ONE MEEEEEELLION DOLLARS!!!
-      shamblebee.set_salary(1000000)
+      shamblebee.salary = 1000000
       expect(shamblebee.salary).to be (1000000)
     end
 
     it "increases salary with a good performance review" do
-      shamblebee.set_salary(1000000)
+      shamblebee.salary = 1000000
       shamblebee.set_performance_rating(100)
       expect(shamblebee.salary).to be(1000800)
     end
@@ -70,7 +70,7 @@ describe ApprenticeTeacher do
 
   describe "feedback acceptance" do
     before(:each) do
-      shamblebee.set_salary(1000000)
+      shamblebee.salary = 1000000
     end
 
     it "is gracious" do
