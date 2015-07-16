@@ -2,6 +2,8 @@
 
 Please work by yourself. Unless instructed to do so, please do not change the tests.
 
+For your workflow, you can fork this repo, work on it, and then submit a pull request. Please do not push your code until the assessment has ended.
+
 **Commit after each release (or more often if you like). Do not push your code until the assessment has ended.**
 
 Resources available:
