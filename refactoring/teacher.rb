@@ -26,8 +26,9 @@ class Teacher
     response
   end
 
-  def set_salary(salary)
-    @salary = salary
+  def salary=(new_salary)
+    puts "This better be good!"
+    @salary = new_salary
   end
 
   def receive_raise(raise)
