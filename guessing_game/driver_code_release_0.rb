@@ -18,6 +18,6 @@ p (game.guess(11) == "Too high!")
 p (game.guess(10) == "Too high!")
 p (game.remaining_guesses == 2)
 
-puts "Correct guess wins the game"
+puts "Correct guess receives feedback and then a congrats message"
 p (game.guess(8) == "Correct! You win!")
 
