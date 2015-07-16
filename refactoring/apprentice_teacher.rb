@@ -26,9 +26,9 @@ class ApprenticeTeacher
     response
   end
 
-  def salary=(salary)
+  def salary=(new_salary)
     puts "This better be good!"
-    @salary = salary
+    @salary = new_salary
   end
 
   def receive_raise(raise)
