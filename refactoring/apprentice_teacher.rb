@@ -26,7 +26,8 @@ class ApprenticeTeacher
     response
   end
 
-  def set_salary(salary)
+  def salary=(salary)
+    puts "This better be good!"
     @salary = salary
   end
 
