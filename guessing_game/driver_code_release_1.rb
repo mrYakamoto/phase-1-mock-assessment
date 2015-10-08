@@ -39,7 +39,7 @@ puts "Warning is given when there's only one guess remaining"
 p (game.guess(9) == "Too high! WARNING: Only one guess left!")
 
 puts "Correct guess gets feedback and then congrats message"
-p (game.guess(8) == "Correct! You win!")
+p (game.guess(8) == "Correct!")
 
 puts "Outcome is recorded correctly"
 p (game.has_won? == true)
