@@ -38,7 +38,7 @@ p (game.remaining_guesses == 2)
 puts "Warning is given when there's only one guess remaining"
 p (game.guess(9) == "Too high! WARNING: Only one guess left!")
 
-puts "Correct guess gets feedback and then congrats message"
+puts "Correct guess gets feedback"
 p (game.guess(8) == "Correct!")
 
 puts "Outcome is recorded correctly"
