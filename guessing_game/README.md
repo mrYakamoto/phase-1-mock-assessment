@@ -18,9 +18,11 @@ Tip: This is driver code, not RSpec -- you must solve the tests in order, becaus
 
 ## Release 1
 
-Make all of the driver code in driver_code_release_1.rb evaluate to true.
+Refactor the code in Release 0 to make all of the driver code in driver_code_release_1.rb evaluate to true.
 
-Note: This will break Release 0. That's okay, but commit before you start.
+Note: This will break Release 0.
+You need to have a commit where release 0 is completely working, then a separate commit where release 1 is completely working.
+Both of these commits should be on the same branch.
 
 *Don't forget to commit when you finish Release 1! From here on out, it's up to you to remember.*
 

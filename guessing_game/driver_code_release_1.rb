@@ -1,16 +1,19 @@
 require_relative 'guessing_game'
 
-puts "We can initialize a guessing game with our desired 'secret number'"
-game = GuessingGame.new(8)
-p (game.class == GuessingGame)
+puts "We can initialize a guessing game with our desired 'secret number' and the number of allowed guesses"
+game = GuessingGame.new(8, 5) # game 1
+losing_game = GuessingGame.new(999, 1) # game 2
 
 puts "We can set a custom congrats message"
 p (game.congrats_message == "Yay, you won!")
-game.congrats_message = "You win!"
-p (game.congrats_message == "You win!")
+game.congrats_message = "Correct!"
+p (game.congrats_message == "Correct!")
 
-puts "There will be 5 guesses remaining"
+puts "There will be 5 guesses remaining in game 1"
 p (game.remaining_guesses == 5)
+
+puts "There will be 1 guess remaining in game 2"
+p (losing_game.remaining_guesses == 1)
 
 puts "User has neither won nor lost yet"
 p (game.has_won? == false)
@@ -38,9 +41,27 @@ p (game.remaining_guesses == 2)
 puts "Warning is given when there's only one guess remaining"
 p (game.guess(9) == "Too high! WARNING: Only one guess left!")
 
-puts "Correct guess gets feedback"
-p (game.guess(8) == "Correct!")
+# make deep copy of game 1 to test losing
+copied_game = Marshal.load(Marshal.dump(game))
 
-puts "Outcome is recorded correctly"
+puts "Correct guess gets feedback for the custom congrats message"
+p (game.guess(8) == "Correct! The number was 8")
+
+puts "Losing games get a loss message"
+p (losing_game.guess(9) == "You lost! The number was 999")
+p (copied_game.guess(123) == "You lost! The number was 8")
+
+puts "Guesses on completed games show the status of the game"
+p (game.guess(8) == "You already won. The number was 8")
+p (losing_game.guess(999) == "You already lost. The number was 999")
+
+puts "Guesses on completed games do not alter remaining_guesses"
+p (game.remaining_guesses == 0)
+
+puts "Outcome is recorded correctly for won game"
 p (game.has_won? == true)
 p (game.has_lost? == false)
+
+puts "Outcome is recorded correctly for lost game"
+p (losing_game.has_won? == false)
+p (losing_game.has_lost? == true)
