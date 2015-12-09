@@ -15,16 +15,6 @@ Resources available:
 
 **Attempt the following challenges in order. You are welcome to move on if you get stuck, but give each section a try.**
 
-Skip the bonus section until you're finished with the main releases.
-
-1. [Translator] (translator)
+1. [Warmup] (warmup)
 2. [Guessing Game] (guessing_game)
 3. [Refactoring] (refactoring)
-
-## Super Crazy Bonus Releases
-
-Any order is fine.
-
-- [Translator Bonus Release (Additional feature)] (translator/bonus.md)
-- [Guessing Game Bonus Release (RSpec)] (guessing_game/bonus.md)
-- [Refactoring Bonus Release (Short answer)] (refactoring/bonus.md)
