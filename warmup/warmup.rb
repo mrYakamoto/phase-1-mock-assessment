@@ -1,4 +1,4 @@
-def say_bye(name = nil)
+def say_bye(name)
 end
 
 def sum_values(input_hash)
