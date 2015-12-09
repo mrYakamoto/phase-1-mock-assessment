@@ -13,7 +13,7 @@ Resources available:
 - breaks (take a lap around the floor or a few minutes to breathe, you'll feel better!)
 - comments (If you can't quite get it working, comment and tell us what your thought process was)
 
-**Attempt the following challenges in order. You are welcome to move on if you get stuck, but give each section a try.**
+**Attempt the following challenges in order. You are welcome to move on if you get stuck; do give each section a try before the end.**
 
 1. [Warmup] (warmup)
 2. [Guessing Game] (guessing_game)
