@@ -2,11 +2,11 @@
 
 Ignore bonus.md for now -- that's a bonus release for when/if you've finished the core challenges.
 
-## Release 0
+## Release 1
 
-Make all of the driver code in driver_code_release_0.rb evaluate to true. Running
+Make all of the driver code in driver_code_release_1.rb evaluate to true. Running
 
-    ruby driver_code_release_0.rb
+    ruby driver_code_release_1.rb
 
 should result in a bunch of "true"s printing to the screen.
 
@@ -16,14 +16,7 @@ Tip: This is driver code, not RSpec -- you must solve the tests in order, becaus
 
 *Don't forget to commit!*
 
-## Release 1
+## Release 2
 
-Refactor the code in Release 0 to make all of the driver code in driver_code_release_1.rb evaluate to true.
-
-Note: This will break Release 0.
-You need to have a commit where release 0 is completely working, then a separate commit where release 1 is completely working.
-Both of these commits should be on the same branch.
-
-*Don't forget to commit when you finish Release 1! From here on out, it's up to you to remember.*
-
+Convert the tests in driver_code_release_1.rb to RSpec. These files should be saved in a spec/ folder in the guessing_game/ folder.
 
