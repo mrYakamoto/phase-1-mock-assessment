@@ -13,6 +13,10 @@ describe Teacher do
     expect(jan.name).to eq("Jannifer")
   end
 
+  it "cannot attend training sessions" do
+    expect{jan.attend_training_session}.to raise_error(NoMethodError)
+  end
+
   describe "default behavior" do
     it "fills in '' for name" do
       expect(default_teacher.name).to eq('')

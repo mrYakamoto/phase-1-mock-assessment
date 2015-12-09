@@ -24,6 +24,10 @@ describe Student do
       response = amir.learn_stuff
       expect(response).to eq("WHOA! I've never thought of it quite like that before. Now I feel like a genius!")
     end
+
+    it "cannot teach stuff" do
+      expect{amir.teach_stuff}.to raise_error(NoMethodError)
+    end
   end
 
   it "allows the name to be updated" do

@@ -13,6 +13,10 @@ describe ApprenticeTeacher do
     expect(shamblebee.offer_high_five).to eq("High five!")
   end
 
+  it "does not have performance rating publicly available" do
+    expect{shamblebee.performance_rating}.to raise_error(NoMethodError)
+  end
+
   describe "default behavior" do
     it "fills in '' for name" do
       expect(default_apprentice.name).to eq('')
