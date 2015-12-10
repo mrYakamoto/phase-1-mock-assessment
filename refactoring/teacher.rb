@@ -1,4 +1,7 @@
+require_relative 'high_five'
+
 class Teacher
+  include HighFive
   attr_reader :age, :salary, :phase, :target_raise
   attr_accessor :name
 
@@ -8,10 +11,6 @@ class Teacher
     @name = options.fetch(:name, "")
     @target_raise = 1000
     @target_performance_rating = 90
-  end
-
-  def offer_high_five
-    "High five!"
   end
 
   def set_phase(num)
