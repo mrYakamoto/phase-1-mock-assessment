@@ -55,18 +55,25 @@ describe Teacher do
   end
 
   describe "salary functionality" do
+    before(:each) do
+      jan.salary = 1_000_000
+    end
+
     it "has a readable target raise of 1000" do
       expect(jan.target_raise).to be(1000)
     end
 
     it "allows the setting of salary" do
       # ONE MEEEEEELLION DOLLARS!!!
-      jan.salary = 1000000
       expect(jan.salary).to be (1000000)
     end
 
+    it "does not increase salary with suboptimal review" do
+      jan.set_performance_rating(85)
+      expect(jan.salary).to be(1000000)
+    end
+
     it "increases salary with a good performance review" do
-      jan.salary = 1000000
       jan.set_performance_rating(100)
       expect(jan.salary).to be(1001000)
     end
