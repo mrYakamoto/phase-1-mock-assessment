@@ -1,3 +1,5 @@
+# INITIAL
+
 class GuessingGame
   attr_accessor :congrats_message, :remaining_guesses, :has_won, :has_lost
   # @@game_number = 1
