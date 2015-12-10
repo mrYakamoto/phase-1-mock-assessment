@@ -12,8 +12,10 @@ p (game.congrats_message == "Correct!")
 puts "There will be 5 guesses remaining in game 1"
 p (game.remaining_guesses == 5)
 
+
 puts "There will be 1 guess remaining in game 2"
 p (losing_game.remaining_guesses == 1)
+
 
 puts "User has neither won nor lost yet"
 p (game.has_won? == false)
@@ -52,6 +54,7 @@ p (losing_game.guess(9) == "You lost! The number was 999")
 p (copied_game.guess(123) == "You lost! The number was 8")
 
 puts "Guesses on completed games show the status of the game"
+p game.guess(8)
 p (game.guess(8) == "You already won. The number was 8")
 p (losing_game.guess(999) == "You already lost. The number was 999")
 
